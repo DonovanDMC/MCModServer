@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  mc-mod-server:
+    container_name: mc-mod-server
+    build: .
+    restart: always
+    healthcheck:
+      interval: 10s
+      timeout: 2s
+      test: lsof -i :3621 || exit 1
+    networks:
+      default:
+        ipv4_address: 172.19.1.6
+
+networks:
+  default:
+    name: mc-mod-server
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.19.1.4/30
+          gateway: 172.19.1.5
