@@ -1,0 +1,28 @@
+{
+  "enabled": false, // waiting on upstream update
+  "name": "1.19",
+  "gitName": "1.19",
+  "releaseType": "release",
+  "dependencies": {
+    "curseforge": [
+      {
+        "slug": "projecte",
+        "type": "requiredDependency"
+      },
+      {
+        "slug": "catalogue",
+        "type": "optionalDependency"
+      }
+    ],
+    "modrinth": []
+  },
+  "mcVersions": {
+    "curseforge": [
+      7498, // Forge
+      8326, // Java 17
+      9186 // 1.19
+    ],
+    "modrinth": ["1.19"]
+  },
+  "modrinthLoaders": ["forge"]
+}

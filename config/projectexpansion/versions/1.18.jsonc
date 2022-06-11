@@ -1,0 +1,28 @@
+{
+  "enabled": true,
+  "name": "1.18.2",
+  "gitName": "1.18",
+  "releaseType": "release",
+  "dependencies": {
+    "curseforge": [
+      {
+        "slug": "projecte",
+        "type": "requiredDependency"
+      },
+      {
+        "slug": "catalogue",
+        "type": "optionalDependency"
+      }
+    ],
+    "modrinth": []
+  },
+  "mcVersions": {
+    "curseforge": [
+      7498, // Forge
+      8326, // Java 17
+      9008 // 1.18.2
+    ],
+    "modrinth": ["1.18.2"]
+  },
+  "modrinthLoaders": ["forge"]
+}

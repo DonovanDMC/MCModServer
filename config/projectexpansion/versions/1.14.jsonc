@@ -1,0 +1,36 @@
+{
+  "enabled": true,
+  "name": "1.14.4",
+  "gitName": "1.14",
+  "releaseType": "release",
+  "dependencies": {
+    "curseforge": [
+      {
+        "slug": "projecte",
+        "type": "requiredDependency"
+      },
+      {
+        "slug": "mixinbootstrap",
+        "type": "requiredDependency"
+      },
+      {
+        "slug": "catalogue",
+        "type": "optionalDependency"
+      }
+    ],
+    "modrinth": []
+  },
+  "mcVersions": {
+    "curseforge": [
+      7498, // Forge
+      4458, // Java 8
+      7318, // 1.14
+      7344, // 1.14.1
+      7361, // 1.14.2
+      7413, // 1.14.3
+      7469 // 1.14.4
+    ],
+    "modrinth": ["1.14", "1.14.1", "1.14.2", "1.14.3", "1.14.4"]
+  },
+  "modrinthLoaders": ["forge"]
+}
