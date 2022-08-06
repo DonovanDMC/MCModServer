@@ -12,6 +12,10 @@
       {
         "slug": "catalogue",
         "type": "optionalDependency"
+      },
+      {
+        "slug": "curios",
+        "type": "optionalDependency"
       }
     ],
     "modrinth": []
