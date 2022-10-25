@@ -1,38 +1,38 @@
 export interface MCVersion {
-	enabled: boolean;
-	name: string;
-	gitName: string;
-	releaseType: string;
-	dependencies:  {
-		curseforge: Array<CFDependency>;
-		modrinth: Array<MRDependency>;
-	};
-	mcVersions: {
-		curseforge: Array<number>;
-		modrinth: Array<string>;
-	};
-	modrinthLoaders: Array<string>;
+    dependencies:  {
+        curseforge: Array<CFDependency>;
+        modrinth: Array<MRDependency>;
+    };
+    enabled: boolean;
+    gitName: string;
+    mcVersions: {
+        curseforge: Array<number>;
+        modrinth: Array<string>;
+    };
+    modrinthLoaders: Array<string>;
+    name: string;
+    releaseType: string;
 }
 
 export interface CFDependency {
-	slug: string;
-	type: "embeddedLibrary" | "incompatible" | "optionalDependency" | "requiredDependency" | "tool";
+    slug: string;
+    type: "embeddedLibrary" | "incompatible" | "optionalDependency" | "requiredDependency" | "tool";
 }
 type MRDependency = never;
 
 export interface BaseSecrets {
-	cfAuth: string;
-	gitAuth: string;
-	gitRepo: string;
+    cfAuth: string;
+    gitAuth: string;
+    gitRepo: string;
 }
 
 export interface GlobalSecrets {
-	auth: string;
+    auth: string;
 }
 
 export interface BaseInfo {
-	gitRepo: string;
-	changeLogType: "markdown" | "html";
-	curseforgeID: number;
-	modrinthID: string;
+    changeLogType: "markdown" | "html";
+    curseforgeID: number;
+    gitRepo: string;
+    modrinthID: string;
 }
