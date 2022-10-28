@@ -23,7 +23,7 @@ export default async function github(githubRepo: string, auth: string, tag: stri
         target_commitish: branch
     });
     if (req.status !== 201) {
-        throw new Error(`Unexpected ${req.status as number} (github)`);
+        throw new Error(`Unexpected ${req.status as number} (github): ${JSON.stringify(req.data)}`);
     }
     await writeFile(`${tmpdir()}/${fileName}`, await readFile(filePath));
     await octo.repos.uploadReleaseAsset({

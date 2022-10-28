@@ -16,6 +16,8 @@
   "homepage": "https://github.com/DonovanDMC/MCModServer#readme",
   "dependencies": {
     "@octokit/rest": "^19.0.5",
+    "@swc/core": "^1.3.11",
+    "@swc/helpers": "^0.4.12",
     "express": "^4.18.2",
     "form-data": "^4.0.0",
     "joi": "^17.6.4",

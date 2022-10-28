@@ -23,7 +23,7 @@ export default async function curseforge(projectID: number, auth: string, displa
         body: data
     });
     if (req.status !== 200) {
-        throw new Error(`Unexpected ${req.status} ${req.status}(curseforge)`);
+        throw new Error(`Unexpected ${req.status} ${req.statusText}: "${await req.text()}" (curseforge)`);
     } else {
         return (await req.json() as { id: number; }).id;
     }

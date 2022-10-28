@@ -25,7 +25,7 @@ export default async function modrinth(project_id: string, gitAuth: string, vers
         body: data
     });
     if (req.status !== 200) {
-        throw new Error(`Unexpected ${req.status} ${req.status} "${await req.text()}" (modrinth)`);
+        throw new Error(`Unexpected ${req.status} ${req.statusText}: "${await req.text()}" (modrinth)`);
     } else {
         return (await req.json() as { id: string; }).id;
     }

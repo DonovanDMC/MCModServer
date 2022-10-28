@@ -13,7 +13,7 @@ export default async function discord(webhookURL: string, botToken: string, mcVe
         })
     });
     if (req.status !== 200) {
-        throw new Error(`Unexpected ${req.status} ${req.statusText} "${await req.text()}" (discord)`);
+        throw new Error(`Unexpected ${req.status} ${req.statusText}: "${await req.text()}" (discord)`);
     }
     const { id, channel_id } = (await req.json() as { channel_id: string; id: string; });
     await fetch(`https://discord.com/api/v10/channels/${channel_id}/messages/${id}/crosspost`, {
