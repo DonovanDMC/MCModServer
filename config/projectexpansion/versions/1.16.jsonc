@@ -15,7 +15,11 @@
       },
       {
         "slug": "catalogue",
-        "type": "curios"
+        "type": "optionalDependency"
+      },
+      {
+        "slug": "curios",
+        "type": "optionalDependency"
       },
       {
         "slug": "projectex",
