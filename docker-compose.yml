@@ -23,4 +23,4 @@ networks:
       config:
         - subnet: 172.19.1.8/30
     driver_opts:
-      com.docker.network.bridge.name: br-mc-mod-server
+      com.docker.network.bridge.name: br-mc-mods
