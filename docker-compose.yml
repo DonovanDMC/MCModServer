@@ -9,8 +9,7 @@ services:
       timeout: 2s
       test: lsof -i :3621 || exit 1
     networks:
-      default:
-        ipv4_address: 172.19.1.6
+      - default
     hostname: "mc-mods.containers.local"
     labels:
       - "hostname=mc-mods.containers.local"
