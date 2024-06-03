@@ -19,4 +19,4 @@ app.use(morgan("dev"))
 	})
 	.use("/projectexpansion", ProjectExpansion)
 	.use(async(req, res) => res.status(404).end())
-	.listen(3621, "0.0.0.0", () => console.log("Listening On http://0.0.0.0:3621"));
+	.listen(80, "0.0.0.0", () => console.log("Listening On http://0.0.0.0:80"));

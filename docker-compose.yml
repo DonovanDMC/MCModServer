@@ -7,7 +7,7 @@ services:
     healthcheck:
       interval: 10s
       timeout: 2s
-      test: lsof -i :3621 || exit 1
+      test: lsof -i :80 || exit 1
     networks:
       - default
     hostname: "mc-mods.containers.local"

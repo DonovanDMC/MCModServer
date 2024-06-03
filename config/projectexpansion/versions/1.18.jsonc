@@ -16,6 +16,10 @@
       {
         "slug": "curios",
         "type": "optionalDependency"
+      },
+      {
+        "slug": "extendedexchange",
+        "type": "incompatible"
       }
     ],
     "modrinth": []

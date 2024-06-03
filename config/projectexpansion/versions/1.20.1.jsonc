@@ -1,7 +1,7 @@
 {
   "enabled": true,
-  "name": "1.19.2",
-  "gitName": "1.19.2",
+  "name": "1.20.1",
+  "gitName": "1.20.1",
   "releaseType": "release",
   "dependencies": {
     "curseforge": [
@@ -16,17 +16,21 @@
       {
         "slug": "curios",
         "type": "optionalDependency"
+      },
+      {
+        "slug": "cloth-config",
+        "type": "optionalDependency"
       }
     ],
     "modrinth": [
       {
         "project_id": "vvuO3ImH",
-        "version_id": "BKMikxx0",
+        "version_id": "nEba8UUT",
         "dependency_type": "optional"
       },
       {
         "project_id": "9s6osm5g",
-        "version_id": "EUyHCmUW",
+        "version_id": "IbAdAuBo",
         "dependency_type": "optional"
       }
     ]
@@ -34,10 +38,11 @@
   "mcVersions": {
     "curseforge": [
       7498, // Forge
+      10150, // NeoForge
       8326, // Java 17
-      9366 // 1.19.2
+      9990 // 1.20.1
     ],
-    "modrinth": ["1.19.2"]
+    "modrinth": ["1.20.1"]
   },
   "modrinthLoaders": ["forge"]
 }
