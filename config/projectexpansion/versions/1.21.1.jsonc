@@ -1,0 +1,34 @@
+{
+  "enabled": true,
+  "name": "1.21.1",
+  "gitName": "1.21.1",
+  "releaseType": "release",
+  "dependencies": {
+    "curseforge": [
+      {
+        "slug": "projecte",
+        "type": "requiredDependency",
+      },
+      {
+        "slug": "curios",
+        "type": "optionalDependency",
+      },
+    ],
+    "modrinth": [
+      {
+        "project_id": "vvuO3ImH",
+        "version_id": "yohfFbgD",
+        "dependency_type": "optional",
+      },
+    ],
+  },
+  "mcVersions": {
+    "curseforge": [
+      10150, // NeoForge
+      11135, // Java 21
+      11779, // 1.21.1
+    ],
+    "modrinth": ["1.21.1"],
+  },
+  "modrinthLoaders": ["neoforge"],
+}
