@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "name": "1.16.5",
   "gitName": "1.16",
   "releaseType": "release",
